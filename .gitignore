@@ -276,3 +276,6 @@ __pycache__/
 
 
 backup/
+
+# Mac specific
+.DS_Store

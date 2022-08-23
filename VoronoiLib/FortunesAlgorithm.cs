@@ -51,6 +51,13 @@ namespace VoronoiLib
                 //advance
                 edgeNode = next;
             }
+            
+            // attach edges to sites
+            foreach (var edge in edges)
+            {
+                edge.Left.Cell.Add(edge);
+                edge.Right.Cell.Add(edge);
+            }
             return edges;
         }
 
